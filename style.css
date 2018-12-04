@@ -80,3 +80,30 @@ footer{
 .person p:nth-of-type(2){
     font-size: 12px;
 }
+.icon{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .title{
+        padding-top: 30px;
+        font-size: 40px;
+    }
+    .subtitle {
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    nav ul li{
+        display: none;
+    }
+    nav ul.clicked li{
+        display: block;
+        border: none;
+        font-size: 15px;
+    }
+    .icon{
+        color: #FFF;
+        display: block;
+    }
+}

@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Glegoo|Karma" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
     <header>
         <h1 class="title">साहित्य संगम संस्थान</h1>
         <h2 class="subtitle">रा. पंजी. सं. -एस/१८०१/२०१७</h2>
         <nav>
-            <ul>
+            <div></div>
+            <ul id="menu">
                 <li>
                     मुख्य पृष्ठ
                 </li>
@@ -35,8 +36,10 @@
                 <li>
                     ग़ज़ल-गुंजन
                 </li>
-
             </ul>
+            <a href="javascript:void(0);" class="icon" id="hamburger" onclick="navClicked()">
+                    <i class="fa fa-bars"></i>
+                  </a>
         </nav>
     </header>
     <section class="content">
@@ -88,6 +91,7 @@
             </section>
         </section>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
