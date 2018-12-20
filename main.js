@@ -9,3 +9,17 @@ function navClicked() {
         hamburger.style.display = 'block';
     }, 5000);
 }
+
+var app = angular.module('app', []);
+app.controller('myCtrl', function($scope, $http) {
+    
+
+    $http.get('config.json')
+        .then(function(response) {
+            $scope.config = response.data;
+        });
+
+    $scope.navOptionClicked = function() {
+        
+    }
+});

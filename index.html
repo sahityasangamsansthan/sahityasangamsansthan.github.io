@@ -10,31 +10,17 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Glegoo|Karma" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
-<body>
+<body ng-app="app" ng-controller="myCtrl">
     <header>
-        <h1 class="title">साहित्य संगम संस्थान</h1>
+        <h1 class="title">{{ config.title }}</h1>
         <h2 class="subtitle">रा. पंजी. सं. -एस/१८०१/२०१७</h2>
         <nav>
             <div></div>
             <ul id="menu">
-                <li>
-                    मुख्य पृष्ठ
-                </li>
-                <li>
-                    सवेरा
-                </li>
-                <li>
-                    आह्लाद
-                </li>
-                <li>
-                    अविचल प्रवाह
-                </li>
-                <li>
-                    छदेष्ठि
-                </li>
-                <li>
-                    ग़ज़ल-गुंजन
+                <li ng-repeat="x in config.navValues" onclick="navOptionClicked()">
+                    {{ x }}
                 </li>
             </ul>
             <a href="javascript:void(0);" class="icon" id="hamburger" onclick="navClicked()">
@@ -71,23 +57,15 @@
             </li>
         </ul>
     </section>
+    <section class="addLink">
+        Label: <input type="text" />
+        Link URL: <input type="text" />
+    </section>
     <footer>
         <section class="people">
-            <section class="person">
-                <p>कैलाश मंडलोई कदंब</p>
-                <p>पंच परमेश्वर अधीक्षक</p>
-            </section>
-            <section class="person">
-                <p>डॉ. अरुण श्रीवास्तव अर्णव </p>
-                <p>सा. सं. शिरामणि</p>
-            </section>
-            <section class="person">
-                <p>कविराज तरुण सक्षम</p>
-                <p>सचिव</p>
-            </section>
-            <section class="person">
-                <p>राजवीर सिंह मंत्र</p>
-                <p>अध्यक्ष </p>
+            <section ng-repeat="person in config.people" class="person">
+                <p>{{ person.name }}</p>
+                <p>{{ person.title }}</p>
             </section>
         </section>
     </footer>

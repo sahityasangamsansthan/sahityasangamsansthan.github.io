@@ -1,0 +1,42 @@
+{
+    "title": "साहित्य संगम संस्थान",
+    "navValues": [
+        "मुख्य पृष्ठ",
+        "सवेरा",
+        "आह्लाद",
+        "अविचल प्रवाह",
+        "छदेष्ठि",
+        "ग़ज़ल-गुंजन",
+        "लिंक जोड़े"
+    ],
+    "people": [
+        {
+            "name": "कैलाश मंडलोई कदंब",
+            "title": "पंच परमेश्वर अधीक्षक"
+        },
+        {
+            "name": "डॉ. अरुण श्रीवास्तव अर्णव ",
+            "title": "सा. सं. शिरामणि"
+        },
+        {
+            "name": "कविराज तरुण सक्षम",
+            "title": "सचिव"
+        },
+        {
+            "name": "राजवीर सिंह मंत्र",
+            "title": "अध्यक्ष"
+        }
+    ],
+    "links" : [{
+        "text": "छंदेष्टि माह अक्टूबर २०१८",
+        "url":"https://drive.google.com/file/d/12DfaT_BeDFG1xy0PtLSND8WefA9sGOmA/view",
+        "date":"",
+        "category":"chandesthi"
+
+    },{
+        "text": "छअविचल प्रभा वर्ष-२ अंक-१४ माह-अक्टूबर",
+        "date":"",
+        "category":"avichalprabha",
+        "url": "https://drive.google.com/file/d/1zNflkMVzjPcNd0rwk0-3pgEg9Pdc_BDD/view"
+    }]
+}
