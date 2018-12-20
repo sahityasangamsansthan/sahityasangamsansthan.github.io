@@ -11,6 +11,15 @@
     <link href="https://fonts.googleapis.com/css?family=Glegoo|Karma" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body ng-app="app" ng-controller="myCtrl">
     <header>
@@ -19,8 +28,8 @@
         <nav>
             <div></div>
             <ul id="menu">
-                <li ng-repeat="x in config.navValues" onclick="navOptionClicked()">
-                    {{ x }}
+                <li ng-repeat="value in config.navValues">
+                    <a href="#!{{value.url}}">{{ value.text }}</a>
                 </li>
             </ul>
             <a href="javascript:void(0);" class="icon" id="hamburger" onclick="navClicked()">
@@ -28,39 +37,8 @@
                   </a>
         </nav>
     </header>
-    <section class="content">
-        <h3 class="subheading">अक्टूबर २०१८</h3>
-        <ul>
-            <li>
-                <a target="_blank" href="https://drive.google.com/file/d/12DfaT_BeDFG1xy0PtLSND8WefA9sGOmA/view">
-                    छंदेष्टि माह अक्टूबर २०१८
-                </a>
-            </li>
-            <li>
-                <a target="_blank" href="https://drive.google.com/file/d/1zNflkMVzjPcNd0rwk0-3pgEg9Pdc_BDD/view">
-                    अविचल प्रभा वर्ष-२ अंक-१४ माह-अक्टूबर
-                </a>
-            </li>
-
-            <li>
-                <a target="_blank" href="https://drive.google.com/file/d/1YZT8m5-yEkcdN7RKKp6_IT0kENjYj7LL/view">
-                    सवेरा माह-अक्टूबर २०१८
-                </a>
-            </li>
-        </ul>
-        <h3 class="subheading">सितम्बर २०१८</h3>
-        <ul>
-            <li>
-                <a target="_blank" href="https://drive.google.com/file/d/1zwaaVICOzidJXHNuT8ysTMG94VBz_u3J/view">
-                    ग़ज़ल गुंजन माह-सितम्बर
-                </a>
-            </li>
-        </ul>
-    </section>
-    <section class="addLink">
-        Label: <input type="text" />
-        Link URL: <input type="text" />
-    </section>
+    <section ng-view class="content"></section>
+    
     <footer>
         <section class="people">
             <section ng-repeat="person in config.people" class="person">
