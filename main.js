@@ -17,6 +17,9 @@ app.config(['$routeProvider',function($routeProvider){
     .when("/", {
         templateUrl: "main.html"
     })
+    .when("/savera", {
+        templateUrl: "savera.html"
+    })
     .when("/addlink", {
         templateUrl: "add-link.html"
     });
@@ -34,7 +37,7 @@ app.controller('myCtrl', function($scope, $http) {
 
             $http.get('links.json')
             .then(function(res){
-                $scope.links = res.data.length > response.data.length ? res.data : response.data;
+                $scope.links = res.data.length < response.data.length ? res.data : response.data;
             });
         });
 

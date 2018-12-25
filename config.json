@@ -26,6 +26,10 @@
             "url":"/gazhalgunjan"
         },
         {
+            "text":"अन्य",
+            "url":"/other"
+        },
+        {
             "text":"लिंक जोड़े",
             "url":"/addlink"
         }
