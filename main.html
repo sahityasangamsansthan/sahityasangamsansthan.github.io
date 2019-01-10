@@ -5,6 +5,9 @@
             <a target="_blank" href="{{ link.url }}">
                 {{ link.title }}
             </a>
+            <div class="whatsapp">
+                <a href="whatsapp://send?text={{ link.url }}" data-action="share/whatsapp/share"></a>
+            </div>
         </li>
     </ul>
 </section>
