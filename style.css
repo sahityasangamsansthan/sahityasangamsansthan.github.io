@@ -130,4 +130,9 @@ footer{
         background: url(./images/WhatsApp.png) no-repeat;
         background-size: 50px 50px;
     }
+    .whatsapp a {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+    }
 }
