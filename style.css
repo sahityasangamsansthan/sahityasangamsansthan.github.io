@@ -110,6 +110,9 @@ footer{
         padding-right: 5px;
         padding-left: 5px;
     }
+    .content ul {
+        margin-left: 0;   
+    }
     .content li {
         margin: 10px 0;
         background: #FFF;
