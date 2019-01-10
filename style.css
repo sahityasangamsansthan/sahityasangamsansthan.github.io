@@ -107,10 +107,12 @@ footer{
         display: block;
     }
     .whatsapp{
-        display: inline-block;
-        height: 30px;
-        width: 30px;
+        height: 50px;
+        width: 50px;
         background-color: greenyellow;
-        /* background-image: './images/WhatsApp.png'; */
+        height: 50px;
+        width: 50px;
+        background: url(./images/WhatsApp.png) no-repeat;
+        background-size: 50px 50px;
     }
 }
