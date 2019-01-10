@@ -25,6 +25,15 @@ app.config(['$routeProvider',function($routeProvider){
     });
 }]);
 
+app.config( [
+    '$compileProvider',
+    function( $compileProvider )
+    {   
+        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|whatsapp):/);
+        // Angular before v1.2 uses $compileProvider.urlSanitizationWhitelist(...)
+    }
+]);
+
 app.controller('myCtrl', function($scope, $http) {
     
     $http.get('config.json')
