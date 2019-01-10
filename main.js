@@ -67,3 +67,7 @@ app.controller('myCtrl', function($scope, $http) {
 
     }
 });
+
+app.filter('encodeURIComponent', function() {
+    return window.encodeURIComponent;
+});
