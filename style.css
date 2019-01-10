@@ -106,7 +106,19 @@ footer{
         color: #FFF;
         display: block;
     }
-    .whatsapp{
+    .content {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .content li {
+        margin: 10px 0;
+        background: #FFF;
+        min-height: 100px;
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .whatsap 5p{
         height: 50px;
         width: 50px;
         background-color: greenyellow;
